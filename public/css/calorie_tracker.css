@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Gilroy";
+    background-color: #CCEFF9;
+}
+nav{
+    background-color: #f3f3f3;
+}

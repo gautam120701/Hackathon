@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    #f3f3f3
+}
+header{
+    width: 100%;
+    height: 10%;
+    background-color: #6C00FF;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: "Gilroy";
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+}
+.sec1, .sec2{
+    font-family: "Gilroy";
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.card{
+    font-family: "Gilroy";
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+.card p{
+    font-family: "Gilroy";
+    margin: 35px 0;
+}
+button{
+    background-color: #6C00FF;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    /* margin-top: 15px; */
+   
+}
+button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* exercise1......................................................................... */
+#head{
+    display: flex;
+    justify-content: space-between;
+}
+.next{
+    font-size: xx-large;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section1{
+    height: 300px;
+    font-family: "Gilroy";
+    width: 480px;
+    background-color: #f3f3f3;
+    padding: 30px ;
+    border: none;
+    border-radius: 15px;
+}
+.section1 h1{
+    font-family: "Gilroy";
+    margin-bottom: 25px;
+}
+.section1 p{
+    font-family: "Gilroy";
+    word-spacing: 3px;
+}
+.section2{
+    margin-top: 70px;
+    height: 400px;
+    font-family: "Gilroy";
+    width: 650px;
+    background-color: #f3f3f3;
+    padding: 30px ;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

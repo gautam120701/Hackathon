@@ -1,0 +1,47 @@
+
+main{
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    font-family: "Gilroy";
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    /* color: #f3f3f3; */
+}
+form input, select{
+    font-family: "Gilroy";
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    width: 170px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    font-weight: 500;
+}
+.height, .weight, .target_weight{
+    padding: 10px 10px;
+    width: 170px;
+    font-weight: 500;
+}
+.button{
+    width: 350px;
+    background-color: #6C00FF;
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+    margin-top: 15px;
+}
+.button:hover{
+    color: #6C00FF;
+    background-color: whitesmoke;
+    font-weight: bolder;
+    border: 2px solid #6C00FF;
+}
+p{
+    text-align: center;
+}

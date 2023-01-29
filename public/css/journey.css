@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #baeaf77a;
+    font-family: "Gilroy";
+}
+
+header{
+    background-color: whitesmoke;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    margin: 0 50px;
+}
+.header_right{
+    display: flex;
+    gap: 30px;
+}
+.header_right .user{
+    font-size: xx-large;
+}
+main{
+    padding: 0 100px;
+}
+.section1{
+    padding: 0 50px;
+    display: flex;
+justify-content: space-between;
+}
+.trackers{
+    margin-top: 50px;
+    height: 550px;
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 45px;
+    background-color: whitesmoke;
+}
+.trackers h1{
+    margin-bottom: 30px;
+  border-bottom: 1px solid gray;
+}
+.trackers p{
+    border-bottom: 1px solid gray;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.trackers p a{
+    text-decoration: none;
+    color: black;
+    font-family: "Gilroy";
+    font-size: x-large;
+   
+}
+.trackers p a:hover{
+    color: blue;
+    font-weight: bold;
+}
+ .bmi_status, .goal_status, .weight_status{ 
+    border: 1px solid gray;
+    margin-top: 50px;
+    height: 100px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.section1 .sec1_right{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+input {
+  background-color: #f3f3f3;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+  font-family: "Gilroy";
+}
+select {
+  background-color: #f3f3f3;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 220px;
+  margin-bottom: 25px;
+  font-family: "Gilroy";
+}
+button {
+  height: 40px;
+  font-weight: bolder;
+  width: 200px;
+  border: none;
+  background-color: #6c00ff;
+  color: #f3f3f3;
+  font-family: "Gilroy";
+  border-radius: 10px;
+}
+#radio1 {
+	width: 100px;
+	background-color: red;
+}

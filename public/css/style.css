@@ -1,0 +1,81 @@
+
+/* home page css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: "Gilroy";
+}
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    margin: 0 50px;
+}
+.header_right{
+    display: flex;
+    gap: 30px;
+}
+.header_right > p > a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.header_right > p > a:hover{
+    color: blue;
+}
+.section1{
+    /* background-color: red; */
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 5px;
+    line-height: 50px;
+}
+.sec1_left{
+    margin-top: 25px;
+    margin-left: 40px;
+    width: 40%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.sec1_left p{
+    margin-top: 100px;
+}
+.sec1_left button{
+    margin-top: 45px;
+    height: 50px;
+    width: 250px;
+    border: none;
+    border-radius: 15px;
+    background-color: #6C00FF;
+ 
+}
+.sec1_left button a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size:x-large ;
+}
+ 
+.sec1_right{
+    margin-right: 15px;
+    width: 40%;
+}
+.sec1_right img{
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* sign in css.................................................................................................................. */
+
