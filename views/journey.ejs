@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Begin your Journey</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/journey.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_left">
+        <h1>FITNESS HUB</h1>
+      </div>
+      <div class="header_right">
+        <i class="ri-account-pin-circle-line user"></i>
+      </div>
+    </header>
+    <main class="container">
+      <div class="section1">
+        <div class="sec1_left">
+        <div class="trackers">
+          <h1>Trackers</h1>
+          <p><a href="/calorie_tracker"> Calorie Tracker</a></p>
+          <p><a href="/workout">Work-out Tracker</a></p>
+          <p><a href="/water">Water Tracker</a></p>
+          <p><a href="/sleep">Sleep Tracker</a></p>
+           <p><a href="#">Supplement Tracker</a></p>
+           <p><a href="/exercise">Exercises</a></p>
+        </div>
+    </div>
+    <div class="sec1_right">
+        <div class="bmi_status">
+          <h2>
+            Current BMI: <br />
+            <%= obj.bmi %>
+          </h2>
+          <h2 class="bmi"></h2>
+        </div>
+        <div class="goal_status">
+            <h2>
+              Current Goal: <br />
+              <%= obj.goal %>
+            </h2>
+            <h2 class="goal"></h2>
+          </div>
+          <div class="weight_status">
+            <h2>
+              Current Weight: <br />
+              <%= obj.tweight %>
+            </h2>
+            <h2 class="weight"></h2>
+          </div>
+    </div>
+      </div>
+    </main>
+  </body>
+</html>

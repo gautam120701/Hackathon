@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | FITNESS HUB</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <main>
+        <form action="/register" method="post">
+            <h1>Sign Up</h1>
+            <input type="text" name="name" placeholder="John Doe" required> 
+            <input type="email" name="email" placeholder="example@gmail.com" required> <br>
+            <input type="passsword" name="pwd" placeholder="password" required> 
+            <input type="passsword" name="cpwd" placeholder=" confirm password" required> <br>
+        <!-- Goals -->
+            <select id="goals" name="goals" required>
+              <option value="Loose your weight">Loose your weight</option>
+              <option value="Maintain your weight">Maintain your weight</option>
+              <option value="Gain weight" selected>Gain weight</option>
+              <option value="null" selected> Goal</option>
+            </select> 
+         <!-- Deit -->
+            <select id="Deit" name="Deit" required>
+              <option value="Vegan">Vegan</option>
+              <option value="Vegetarian">Vegetarian</option>
+              <option value="Eggetarian" selected>Eggetarian</option>
+              <option value="Non-vegetarian" selected>Non-vegetarian</option>
+              <option value="null" selected> Deit</option>
+            </select> <br>
+            <!-- Baseline -->
+            <select id="baseline" name="baseline" required>
+                <option value="null"> Base line activity </option>
+              <option value="Not very Active">Not very Active</option>
+              <option value="Active">Active</option>
+              <option value="Very Active">Very Active</option>
+            </select> 
+            <!-- Gender -->
+            <select id="gender" name="gender" required>
+                <option value="null">Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select> <br>
+          <input type="number" name="age" placeholder="Age" min="10" max="100"> 
+          <input class="height" name="height" type="number" placeholder="Height in cm" min="150" max="250"> <br>
+          <input class="weight" name="weight" type="number" placeholder="Weight in kg" min="40" max="200"> 
+          <input class="target_weight" name="tweight" type="number" placeholder="Target weight in kg" min="40" max="200"> <br>
+          <input class="button" type="submit" value="Sign Up" >
+          <p>Already have an account <a href="/login">Sign In</a></p>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/maintenance-calories.css" />
+    <title>Calorie Maintenance</title>
+  </head>
+  <body>
+    <div class="calculator">
+        <h1>Maintenance calories calculator</h1>
+      <form action="/" id="form">
+        <!-- <label for="radio1 radio2">Gender</label>
+        <input type="radio" name="gender" id="radio1" value="male" checked />
+        <label for="radio1">Male</label>
+        <input type="radio" name="gender" id="radio2" value="female" />
+        <label for="radio2">Female</label> -->
+        <select name="gender" id="gender">
+            <option value="null" selected id="gender">Gender</option>
+            <option value="male"  id="radio1">Male</option>
+            <option value="male"  id="radio2">Female</option>
+        </select>
+        <!-- <br /> -->
+        <br />
+        <!-- <label for="age">Age</label> -->
+        <input type="text" id="age" name="age" placeholder="Age"/>
+        <br />
+        <br />
+        <!-- <label for="height">Height</label> -->
+        <input type="text" id="height" name="height" placeholder="Height in cm" />
+        <br />
+        <br />
+        <!-- <label for="weight">Weight</label> -->
+        <input type="text" id="weight" name="weight" placeholder="Weight in Kg" />
+        <br />
+        <br />
+        <!-- <label for="activity">Activity</label> -->
+        <select name="activity" id="activity">
+            <option value="null" selected>Activity</option>
+            <option value="1.2">Sedentary (office job)</option>
+          <option value="1.375">Lightly active (1-2 days/week)</option>
+          <option value="1.55">Moderately active (3-5 days/week)</option>
+          <option value="1.725">Very active (6-7 days active)</option>
+          <option value="1.9">Extra active (2x per day)</option>
+        </select> <br>
+        <button>Calculate</button>
+      </form>
+    </div>
+    <script src="js/maintenance-calorie.js" defer></script>
+  </body>
+</html>

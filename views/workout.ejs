@@ -1,0 +1,111 @@
+<html lang="en" ng-app="StarterApp">
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="css/workout_tracker.css">
+  <meta name="viewport" content="initial-scale=1" />
+  <title>Workout Tracking</title>
+</head>
+
+<body ng-controller="AppCtrl" layout="column" >
+  <md-toolbar md-scroll-shrink="md-scroll-shrink">
+    <div class="md-toolbar-tools">
+      <h1>Workout Tracker</h1>
+    </div>
+  </md-toolbar>
+  <md-content flex="flex">
+
+      <md-progress-linear md-mode="query" ng-hide="loaded"></md-progress-linear>
+      <div class='md-padding' layout="row" layout-wrap>
+      <md-list-item ng-repeat="item in list | orderBy:orderByField">
+        <md-input-container>
+          <label>Exercise</label>
+            <md-select ng-model="item.excerise" ng-change="list.$save(item)">
+              <md-option value="Chest Press">Chest Press</md-option>
+              <md-option value="Lateral Pull-Down">Lateral Pull-Down</md-option>
+              <md-option value="Leg Press">Leg Press</md-option>
+              <md-option value="Shouder Press">Shouder Press</md-option>
+              <md-option value="Seated Row">Seated Row</md-option>
+            </md-select>
+          <div class="md-errors-spacer"></div>  
+        </md-input-container>          
+        <md-input-container>
+          <label>Seat Position</label>          
+          <input ng-model="item.seat" ng-change="list.$save(item)" />
+        </md-input-container>
+        <md-input-container>
+          <label>Weight</label>          
+          <input ng-model="item.weight" ng-change="list.$save(item)" />
+        </md-input-container>
+        <md-input-container>
+          <label>TUL</label>
+          <input type="number" ng-model="item.tul" ng-change="list.$save(item)" />
+        </md-input-container>
+        <md-input-container>
+  <label>Last Taken</label>
+      <input value="{{ item.published_at | amCalendar }}"title="{{ item.published_at | amCalendar }}"/>
+          (<time am-time-ago="item.published_at"></time>)
+        </md-input-container>
+        
+        <md-button class="md-accent md-raised" ng-click="list.$remove(item)">x</md-button>
+      </md-list-item>
+       </div> 
+      <md-icon ng-click="deleteFromList(item)" aria-label="delete {{item.data}}" class="material-icons">remove
+        <md-divider></md-divider>
+      </md-icon>
+      <md-list-item ng-show="add">
+        <form ng-submit="addToList(item)" layout="row" layout-padding="layout-padding" layout-align="start center" flex="flex">
+        <md-input-container flex="flex">
+        <label>Exercise</label>
+        <md-select ng-model="item.excerise" ng-change="list.$save(item)">
+          <md-option value="Chest Press">Chest Press</md-option>
+          <md-option value="Lateral Pull-Down">Lateral Pull-Down</md-option>
+          <md-option value="Leg Press">Leg Press</md-option>
+          <md-option value="Shouder Press">Shouder Press</md-option>
+          <md-option value="Seated Row">Seated Row</md-option>
+        </md-select>
+        <div class="md-errors-spacer"></div>        
+      </md-input-container>
+        <md-input-container flex="flex">
+            <label>Seat Position</label>
+            <input type="number" ng-model="item.seat" required="required" />
+          </md-input-container>
+        <div class="md-errors-spacer"></div>        
+          
+          <md-input-container flex="flex">
+            <label>Weight</label>
+            <input type="number" ng-model="item.weight" required="required" />
+          </md-input-container>
+          <md-input-container flex="flex">
+            <label>TUL (Time under load)</label>
+            <input type="number" ng-model="item.tul" required="required" />
+          </md-input-container>
+          
+          <md-button aria-label="More" type="submit" class="md-icon-button">
+            <md-icon class="material-icons">send</md-icon>
+          </md-button>
+        </form>
+      </list-item>
+   
+      
+     
+  </md-content>
+  <md-button ng-click="add=true" class="md-fab md-fab-bottom-right material-icons">add</md-button>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"> 
+</script>  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-moment/0.9.0/angular-moment.min.js"></script>
+<script src="js/workout.js"></script>
+</body>
+
+</html>
