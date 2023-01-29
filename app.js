@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.set("view engine","ejs")
 app.use(express.static("public"))
 
-mongoose.connect("mongodb://127.0.0.1/FitnessHubDB", {useNewUrlParser : true});
+mongoose.connect("mongodb+srv://gautam:gautam01@cluster0.zevujkx.mongodb.net/FitnessHubDB", {useNewUrlParser : true});
  
 //Schema
 const detailSchema = mongoose.Schema({
